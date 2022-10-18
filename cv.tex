@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,14 +72,14 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{9pt}{9pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -88,7 +88,7 @@
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
+%\addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
 %for social icons
@@ -103,7 +103,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -116,12 +116,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Ivan Staroselskiy} \\[7.5pt]
+\href{https://github.com/Ivorlun}{\raisebox{-0.05\height}\faGithub\ Ivorlun} \ $|$ \
+\href{https://linkedin.com/in/ivan-staroselskiy/}{\raisebox{-0.05\height}\faLinkedin\ Ivan-Staroselskiy} \ $|$ \
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ Willing to relocate or remote} \ $|$ \
+\href{mailto:i.staroselskiy@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ i.staroselskiy@gmail.com} \ $|$ \
+\href{tel:+79104692191}{\raisebox{-0.05\height}\faMobile \ +79104692191} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -130,69 +130,91 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+I'm an infrastructure engineer and a team manager of a group of DevOps specialists with a total of 6+ years experience in IT.
+Currently, I'm working on automating the development and delivery processes in a department specializing in application security. Also, have experience in project management as an integration solution architect and in secure development by implementing DevSecOps practices into release processes.
+I am passionate about cloud-native approaches and look forward to growing in it by working on interesting projects.
+
 
 %Experience
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
+\textbf{Head of Operations and automation division}, \textit{Rostelecom-Solar} & \hfill June 2020 - present \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] long long line of blah blah that will wrap when the table fills the column width
-        \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+        \item[•] Performed a complex migration of the entire development infrastructure to vCloud and AWS after the acquisition of the company
+        \item[•] Managing a team of 4 engineers who are responsible for both the development and production infrastructure
+        \item[•] Successfully led the project with product migration from classic VMs and packages to Kubernetes and container distribution way
+        \item[•] Embed security checks into all critical parts of the product with CI pipelines which reduced vulnerability reports during release acceptance by 90\%
+    \end{itemize}
+\end{minipage}
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Lead Infrastructure Engineer}, \textit{SmartDec} & \hfill Aug 2018 - May 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[•] Remade existing CI/CD using Docker for all project repositories with very different technology stacks: e.g. C++/LLVM: Linux, macOS, and Docker for Windows; Java with various JDK and build systems combination; etc.
+        \item[•] Successfully finished a 2-year project of a SAST-tool integration into SDLC of the country's biggest retail company
+        \item[•] Designed and developed an automatic system for a business vulnerability scanning connecting Gitlab-Jenkins-SAST-JIRA using Jenkins and Python
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{IT Infrastructure Engineer}, \textit{SmartDec} & \hfill Aug 2016 - Jul 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[•] Built CI/CD process from scratch for a complex project with Gitlab CI
+        \item[•] Took part in dividing big Java-monolith repo by binding logical parts via the Maven and Gradle dependency mechanism and created a reliable infrastructure for it
+        \item[•] Re-oriented the development process by implementing fundamental DevOps approaches: separating environments, release process branching, postmortems, etc.
     \end{itemize}
     \end{minipage}
 }
 \end{tabularx}
 
 %Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+%\section{Projects}
+%
+%\begin{tabularx}{\linewidth}{ @{}l r@{} }
+%\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+%\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+%\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2008 - 2014 & Specialist's Degree (Physics) at \textbf{Lomonosov Moscow State University} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+%\section{Publications}
+%\begin{refsection}[citations.bib]
+%\nocite{*}
+%\printbibliography[heading=none]
+%\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Skills &  \normalsize{Team management, Project management, DevSecOps, SDLC automation, CI/CD, Container-based infrastructure, IaC, Scripting, Monitoring}\\
+Tools  &  \normalsize{Kubernetes, Docker, VMware vCloud and vSphere, AWS, Jenkins, Git, Gitlab, Go and Python (basic proficiency), Bash, SQL}\\
+Languages  &  \normalsize{English - Professional Proficiency, Russian - native}\\
 \end{tabularx}
 
+
 \vfill
-\center{\footnotesize Last updated: \today}
+%\center{\footnotesize Last updated: \today}
 
 \end{document}
